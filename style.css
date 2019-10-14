@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(https://media.istockphoto.com/photos/walnut-wood-seamless-background-texture-picture-id818169944?k=6&m=818169944&s=170667a&w=0&h=4yLM6ceBPsZuKGm679_suETmxScdwi4q7-cGZ3j0Qkw=);
+    font-family: 'Roboto', sans-serif;
+}
+
 #container {
     border: 1px solid rgb(84, 245, 66);
     width: 60%;
@@ -19,32 +24,37 @@
 }
 
 header {
-    border: 1px solid rgb(84, 245, 66);
     width: 100%;
     height: auto;
     position: relative;
+    margin-bottom: 10px;
 }
 
-.upper {
-    border: 1px solid rgb(84, 245, 66);
+figure {
+    height: 250px;
     width: 100%;
     position: relative;
 }
 
-div.logo_img {
-    height: 250px;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-div>img {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    background-color: white;
-    margin: 5%;
+div.opaque_layer {
+    width: inherit;
+    height: inherit;
+    border: 8px solid white;
+    background-color: rgba(50,50,50,0.5);
+    position: absolute;
+    top: 0;
 }
 
 .menu_bar {
     height: 50px;
+    background-color: rgb(70,70,70);
 }
 
 aside {
@@ -53,27 +63,39 @@ aside {
     float: left;
 }
 
-aside.widget_bar {
+aside.right {
     height: 800px;
 }
 
-aside.link_bar {
+aside.left {
     height: 300px;
 }
 
 main {
     border: 1px solid rgb(84, 245, 66);
     width: inherit;
-    height: 250px;
+    height: auto;
     float: left;
 }
 
-.widget {
+main>div {
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: white;
+}
+
+h1 {
+    color: rgb(70,70,70);
+}
+
+/* .widget {
     border: 1px solid rgb(84, 245, 66);
     width: 90%;
     height: 30%;
-    margin: 25% 5%;
-}
+    margin: 5% 5%;
+} */
 
 footer {
     border: 1px solid rgb(84, 245, 66);
